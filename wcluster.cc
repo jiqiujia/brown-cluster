@@ -58,11 +58,11 @@ opt_define_int(initC,        "c", 1000,                    "Number of clusters."
 opt_define_int(plen,         "plen", 1,                    "Maximum length of a phrase to consider.");
 opt_define_int(min_occur,    "min-occur", 1,               "Keep phrases that occur at least this many times.");
 opt_define_int(rand_seed,    "rand", time(NULL)*getpid(),  "Number to call srand with.");
-opt_define_int(num_threads, "threads", 1,                  "Number of threads to use in the worker pool.");
+opt_define_int(num_threads, "threads", 6,                  "Number of threads to use in the worker pool.");
 
 opt_define_bool(chk,         "chk", false,                 "Check data structures are valid (expensive).");
 opt_define_bool(print_stats, "stats", false,               "Just print out stats.");
-opt_define_bool(paths2map,   "paths2map", false,           "Take the paths file and generate a map file.");
+opt_define_bool(paths2map,   "paths2map", true,           "Take the paths file and generate a map file.");
 opt_define_bool(no_prune,    "no_prune", false,            "Do not prune the hierarchy (show all N leaf clusters)");
 
 #define use_restrict (!restrict_file.empty())
