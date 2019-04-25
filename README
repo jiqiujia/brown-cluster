@@ -26,7 +26,7 @@ Compile:
 Run:
 
   # Clusters input.txt into 50 clusters:
-  ./wcluster --text input.txt --c 50
+  ./wcluster --text input.txt --c 50 --min-occur 10 --threads 12
   # Output in input-c50-p1.out/paths
 
 ============================================================
